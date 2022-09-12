@@ -1,0 +1,24 @@
+Binary Search Trees:
+- Trees are a hierarchical structure. 
+- Root is the starting node. No parent.
+- Every node has only two children.
+- The right node is larger than parent and left is smaller. 
+- Leaf are the nodes with no children.
+- Terms to remember- root, parent, child, siblings, leaf.
+- Balanced vs Unbalanced trees:
+      > A binary search tree is balanced if any two sibling subtrees do not differ in height by more than one level. I
+      > Height balanced tree: a height-balanced tree is one whose leaves are balanced relative to one another, 
+        and relative to other subtrees within the larger tree.
+
+Time complexity:
+- O(log n) If the tree is somewhat balanced then everytime you search for a value, 
+you are cutting half the tree off by picking a side at every level (left or right) and so that makes BST logarithmic.
+- Unbalanced tree operations are O(n)- it essentially becomes a linked list.
+
+AVL Trees:
+- balancing trees with left, right, left-right, right-left rotation.
+
+Red Black Trees:
+- red and black something, idk yet... 
+
+*** Need to go through algos now so I can do some questions...
