@@ -29,3 +29,15 @@ var fib = function(n) {
     
     return b;
 };
+
+
+//array solution - Runtime: 72 ms, faster than 86.12% of JavaScript online submissions
+var fib = function(n) {
+    let arr = [0, 1]
+    let i = 2;
+    while(i<=n){
+        arr.push(arr[i-1]+arr[i-2]);
+        i++;
+    }
+    return arr[n];
+};
