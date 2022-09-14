@@ -1,5 +1,6 @@
 
-//recursive solution - Runtime: 179 ms, faster than 9.13% of JavaScript online submissions
+// recursive solution - Runtime: 179 ms, faster than 9.13% of JavaScript online submissions 
+// O(2^n) - exponential time
 var fib = function(n) {
     if(n < 2){
         return n;
@@ -8,7 +9,8 @@ var fib = function(n) {
     return fib(n-1) + fib(n-2);
 };
 
-//iterative solution - Runtime: 99 ms, faster than 52.33% of JavaScript online submissions
+// iterative solution - Runtime: 99 ms, faster than 52.33% of JavaScript online submissions
+// O(n) - linear time
 var fib = function(n) {
     if(n === 0){
         return 0;
@@ -31,8 +33,9 @@ var fib = function(n) {
 };
 
 
-//array solution - Runtime: 72 ms, faster than 86.12% of JavaScript online submissions
-var fib = function(n) {
+// array solution - Runtime: 72 ms, faster than 86.12% of JavaScript online submissions
+// O(n) - linear time, but array access is faster than even initialization, I guess?? 
+var fib = function(n) { 
     let arr = [0, 1]
     let i = 2;
     while(i<=n){
